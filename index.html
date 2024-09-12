@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BÀI KIỂM TRA</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f0f2f5;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 900px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #ffffff;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        h2 {
+            color: #444;
+            margin-top: 20px;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
+            font-size: 22px;
+        }
+        p, li {
+            font-size: 18px;
+            line-height: 1.8;
+            color: #555;
+        }
+        .result {
+            background-color: #e8f5e9;
+            padding: 15px;
+            border-left: 6px solid #4caf50;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+        code {
+            background-color: #f1f1f1;
+            padding: 3px 8px;
+            border-radius: 5px;
+            font-size: 16px;
+            color: #333;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 0 0 8px 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>TÍNH CHI PHÍ CHO DỰ ÁN</h1>
+
+    <h2>1. Tính toán:</h2>
+    <ul>
+        <li><strong>Độ lệch chi phí (CV):</strong> <code>CV = EV - AC</code></li>
+        <li><strong>Độ lệch lịch biểu (SV):</strong> <code>SV = EV - PV</code></li>
+        <li><strong>Chỉ số hiệu suất chi phí (CPI):</strong> <code>CPI = EV / AC</code></li>
+        <li><strong>Chỉ số hiệu suất lịch biểu (SPI):</strong> <code>SPI = EV / PV</code></li>
+    </ul>
+    
+    <h2>2. Kết quả:</h2>
+    <div class="result">
+        <p><strong>CV:</strong> <code>20.000 - 25.000 = -5.000</code> (Dự án bị vượt ngân sách 5.000$)</p>
+        <p><strong>SV:</strong> <code>20.000 - 23.000 = -3.000</code> (Dự án chậm hơn lịch biểu 3.000$)</p>
+        <p><strong>CPI:</strong> <code>20.000 / 25.000 = 0,8</code> (Mỗi 1 đô chi tiêu chỉ tạo ra 0,8 đô giá trị)</p>
+        <p><strong>SPI:</strong> <code>20.000 / 23.000 = 0,87</code> (Dự án chỉ đạt 87% tiến độ so với kế hoạch)</p>
+    </div>
+
+    <h2>3. Dự án đang đi trước hay đi sau lịch biểu? Trong hay vượt ngân sách?</h2>
+    <p>Với <code>SV = -3.000</code> và <code>SPI = 0,87</code>, dự án đang <strong>đi sau lịch biểu</strong>.</p>
+    <p>Với <code>CV = -5.000</code> và <code>CPI = 0,8</code>, dự án đang <strong>vượt ngân sách</strong>.</p>
+
+    <h2>4. Tính CSI và đưa ra nhận xét:</h2>
+    <div class="result">
+        <p><strong>CSI:</strong> <code>CSI = CPI * SPI = 0,8 * 0,87 = 0,696</code> (Dự án đang gặp vấn đề nghiêm trọng về cả chi phí lẫn tiến độ)</p>
+    </div>
+
+    <h2>5. Dự đoán thời gian hoàn thành dự án:</h2>
+    <p>Dựa trên <code>SPI = 0,87</code>, dự án dự kiến sẽ hoàn thành trong <code>13,8 tháng</code> thay vì 12 tháng như kế hoạch.</p>
+</div>
+
+<div class="footer">
+    Bản quyền © HÀ XUÂN LỢI - 2000236
+</div>
+
+</body>
+</html>
